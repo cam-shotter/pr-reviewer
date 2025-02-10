@@ -49,7 +49,7 @@ FAQs, you can refer to the sections below.
 
 ## Install instructions
 
-`ai-pr-reviewer` runs as a GitHub Action. Add the below file to your repository
+`pr-reviewer` runs as a GitHub Action. Add the below file to your repository
 at `.github/workflows/ai-pr-reviewer.yml`
 
 ```yaml
@@ -75,7 +75,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: Entelligence.AI/ai-pr-reviewer@latest
+      - uses: cam-shotter/pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
